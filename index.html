@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Directory</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .student-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .student-card {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .student-card:hover {
+            transform: translateX(5px);
+            background-color: #e9f7fe;
+            border-left-color: #2980b9;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: 500;
+            font-size: 18px;
+            display: block;
+        }
+
+        a:hover {
+            color: #3498db;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Danh sách sinh viên</h1>
+        <div class="student-links">
+            <div class="student-card">
+                <a href="./students/LeCongChuc.html">Lê Công Chức</a>
+            </div>
+            <div class="student-card">
+                <a href="./students/HuyKhanh.html">Trần Liêu Huy Khánh</a>
+            </div>
+            <div class="student-card">
+                <a href="./students/NguyenDucCanh.html">Nguyễn Đức Cảnh</a>
+            </div>
+            <div class="student-card">
+                <a href="./students/tranlebaotrung.html">Trần Lê Bảo Trung</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        © 2025 Danh sách sinh viên
+    </footer>
+</body>
+
+</html>
