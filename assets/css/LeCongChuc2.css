@@ -1,0 +1,175 @@
+/* Responsive Styles */
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-bottom: 30px;
+  }
+
+  .personal-info {
+    justify-content: center;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 20px;
+  }
+
+  .timeline-item:nth-child(even) {
+    left: 0;
+  }
+
+  .timeline::before {
+    left: 40px;
+  }
+
+  .timeline-dot {
+    left: 31px;
+    right: auto;
+  }
+
+  .timeline-item:nth-child(even) .timeline-dot {
+    left: 31px;
+  }
+
+  .timeline-content.right {
+    margin-left: 0;
+  }
+
+  .skills-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-links ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(-150%);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  .social-links {
+    grid-column: span 1;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .personal-info {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
