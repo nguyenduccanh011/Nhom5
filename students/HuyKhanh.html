@@ -3,20 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang Cá Nhân</title>
+    <title>Trang Cá Nhân - Trần Liêu Huy Khánh</title>
     <link rel="stylesheet" href="HuyKhanh.css" />
+    <script defer src="HuyKhanh.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="profile">
-        <img src="avatar.jpg" alt="Ảnh đại diện" />
-        <h1>Trần Liêu Huy Khánh</h1>
-        <p>👋 Xin chào! Tôi là một lập trình viên đam mê công nghệ.</p>
-        <p>
-          💻 Kỹ năng: Java, C++, Spring boot, DSA,Giải 3 Olympic tin học sinh
-          viên
+        <!-- Ảnh đại diện -->
+        <div class="avatar">
+          <img
+            id="avatar"
+            src="avatar.jpg"
+            alt="Ảnh đại diện"
+            onerror="this.onerror=null; this.src='default-avatar.png';"
+          />
+        </div>
+
+        <!-- Hiệu ứng gõ chữ -->
+        <h1 class="typing-effect"></h1>
+        <p class="glow-text">
+          🚀 Xin chào! Tôi là một lập trình viên đam mê công nghệ, AI và IT.
         </p>
-        <p>📍 Đang sống tại TP. Hồ Chí Minh</p>
+
+        <!-- Thông tin cá nhân -->
+        <h2>🧑‍💻 Thông tin cá nhân</h2>
+        <p>🎓 Sinh viên ngành Khoa học Máy tính - Trường Đại học ABC</p>
+        <p>📍 TP. Hồ Chí Minh | 🎯 Định hướng: Backend & AI</p>
+
+        <!-- Kỹ năng -->
+        <h2>🚀 Kỹ năng</h2>
+        <p>💻 Java, C++, Spring Boot, MySQL, Docker</p>
+        <p>🤖 Machine Learning | AI | NLP</p>
+        <p>📊 Data Structures & Algorithms (DSA)</p>
+
+        <!-- Dự án -->
+        <h2>🛠️ Dự án cá nhân</h2>
+        <ul>
+          <li>🔹 <strong>AI Chatbot</strong> - Python, NLP</li>
+          <li>🔹 <strong>Website TMĐT</strong> - ReactJS, Firebase</li>
+          <li>
+            🔹 <strong>Hệ thống quản lý sinh viên</strong> - Spring Boot, MSSQL
+          </li>
+        </ul>
+
+        <!-- Liên hệ -->
+        <h2>📩 Liên hệ</h2>
         <div class="social-links">
           <a href="https://facebook.com" target="_blank">Facebook</a>
           <a href="https://github.com" target="_blank">GitHub</a>
@@ -24,6 +56,7 @@
           <a href="https://leetcode.com/problemset/" target="_blank"
             >Leetcode</a
           >
+          <a href="mailto:huykhanh@example.com">📩 Email</a>
         </div>
       </div>
     </div>
