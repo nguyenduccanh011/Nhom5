@@ -1,14 +1,32 @@
-/* Định dạng chung */
+/* Font chữ công nghệ */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+/* Hiệu ứng nền */
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: "Orbitron", sans-serif;
+  background: radial-gradient(circle, #000428, #004e92);
   color: white;
   text-align: center;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
-/* Khung chứa trang cá nhân */
+/* Hiệu ứng avatar */
+.avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid cyan;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.avatar img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px cyan;
+}
+
+/* Container chính */
 .container {
   display: flex;
   justify-content: center;
@@ -16,30 +34,38 @@ body {
   height: 100vh;
 }
 
-/* Thông tin cá nhân */
+/* Profile Card */
 .profile {
   background: rgba(255, 255, 255, 0.1);
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px cyan;
+  max-width: 500px;
+  backdrop-filter: blur(5px);
+  animation: fadeIn 1s ease-in-out;
 }
 
-/* Ảnh đại diện */
-.profile img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 3px solid white;
-  margin-bottom: 15px;
+/* Hiệu ứng gõ chữ */
+.typing-effect {
+  font-size: 22px;
+  font-weight: bold;
+  color: cyan;
+  text-shadow: 0px 0px 10px cyan;
 }
 
-/* Liên kết mạng xã hội */
+/* Glow Text */
+.glow-text {
+  font-size: 16px;
+  color: #00ffee;
+  text-shadow: 0px 0px 5px #00ffee;
+}
+
+/* Link mạng xã hội */
 .social-links a {
   display: inline-block;
   color: white;
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 255, 255, 0.2);
   padding: 8px 15px;
   border-radius: 5px;
   margin: 5px;
@@ -47,5 +73,19 @@ body {
 }
 
 .social-links a:hover {
-  background: rgba(255, 255, 255, 0.5);
+  background: cyan;
+  color: black;
+  box-shadow: 0px 0px 15px cyan;
+}
+
+/* Hiệu ứng fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
