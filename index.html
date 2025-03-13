@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Đức Cảnh - Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/nguenduccanh.css">
+    <!-- Font Awesome để thêm icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Nguyễn Đức Cảnh</div>
+            <ul class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="hero">
+            <div class="hero-content">
+                <img src="../assets/images/canh.jpg" alt="Nguyễn Đức Cảnh" class="avatar">
+                <h1>Nguyễn Đức Cảnh</h1>
+                <p class="intro">
+                    Tôi là sinh viên ngành Kỹ thuật Phần mềm tại HUTECH, đam mê xây dựng ứng dụng web và khám phá AI. 
+                    Tôi thích tạo giao diện thân thiện và giải quyết vấn đề bằng mã nguồn thanh lịch.
+                </p>
+                <p>Ngoài lập trình, tôi thích chơi game, đọc truyện tranh và đi bộ đường dài.</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <h3>THPT Bình Sơn</h3>
+                    <p>2018 - 2021</p>
+                    <p>3 năm HSG, giải thưởng các cuộc thi trường và tỉnh.</p>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <h3>Đại học HUTECH - Công Nghệ Thông Tin</h3>
+                    <p>2021 - 2025</p>
+                    <p>GPA 3.63, giải thưởng các cuộc thi.</p>
+                    <div class="academic-projects">
+                        <h4>Dự án học thuật</h4>
+                        <ul>
+                            <li>Trang web quản lý thương mại điện tử (PHP, MySQL)</li>
+                            <li>Nghiên cứu mô hình phân lớp (Python, Scikit-learn)</li>
+                            <li>Trang web ôn thi trắc nghiệm online (React, Node.js)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill" data-aos="zoom-in"><h3>Programming Languages</h3><ul><li>C++</li><li>Java</li><li>Python</li><li>JavaScript</li><li>PHP</li></ul></div>
+                <div class="skill" data-aos="zoom-in"><h3>Frameworks/Libraries</h3><ul><li>React</li><li>Node.js</li><li>Spring Boot</li><li>Scikit-learn</li><li>TensorFlow</li></ul></div>
+                <div class="skill" data-aos="zoom-in"><h3>Tools</h3><ul><li>Git</li><li>Docker</li><li>VS Code</li><li>MySQL</li><li>MongoDB</li></ul></div>
+                <div class="skill" data-aos="zoom-in"><h3>UI/UX Design</h3><ul><li>Figma</li><li>Adobe XD</li><li>CSS3</li></ul></div>
+                <div class="skill" data-aos="zoom-in"><h3>AI/ML</h3><ul><li>TensorFlow</li><li>Scikit-learn</li><li>Pandas</li><li>Numpy</li></ul></div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project" data-aos="flip-left">
+                    <img src="../assets/images/canh.jpg" alt="E-commerce Website" class="project-image">
+                    <h3>Trang web Thương mại điện tử</h3>
+                    <p>Xây dựng trang web thương mại điện tử với PHP và MySQL. Quản lý sản phẩm, giỏ hàng, thanh toán.</p>
+                    <a href="https://github.com/nguyenduccanh011/" target="_blank">View Project</a>
+                </div>
+                <div class="project" data-aos="flip-right">
+                    <img src="../assets/images/canh.jpg" alt="Online Quiz Website" class="project-image">
+                    <h3>Website Ôn thi trắc nghiệm online</h3>
+                    <p>Trang web trắc nghiệm online bằng React và Node.js. Tạo đề, làm bài, chấm điểm.</p>
+                    <a href="https://github.com/nguyenduccanh011" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info" data-aos="fade-up">
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:nduccanh2003@gmail.com">nduccanh2003@gmail.com</a></p>
+                <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="#" target="_blank">LinkedIn Profile</a></p>
+                <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/nguyenduccanh011" target="_blank">GitHub Profile</a></p>
+                <p><i class="fas fa-file-alt"></i> CV: <a href="#" target="_blank">Download CV</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Nguyễn Đức Cảnh. All rights reserved.</p>
+    </footer>
+
+    <!-- Thư viện AOS để thêm hiệu ứng cuộn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   
