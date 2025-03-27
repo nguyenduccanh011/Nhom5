@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cảm ơn!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #4CAF50;
+        }
+
+        .message {
+            margin-top: 30px;
+        }
+
+        .back-button {
+            margin-top: 50px;
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cảm ơn bạn!</h1>
+    <p class="message">Cảm ơn bạn đã liên hệ với chúng tôi. Chúng tôi sẽ phản hồi sớm nhất có thể.</p>
+    <button class="back-button" onclick="goBack()">Trở lại trang chủ</button>
+
+    <script>
+        function goBack() {
+            window.location.href = "localhost:3000/salesforce"; // Thay đổi "your_homepage.html" bằng URL trang chủ của bạn
+        }
+    </script>
+</body>
+
+</html>
